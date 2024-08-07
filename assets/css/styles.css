@@ -680,7 +680,7 @@ img {
   transform: translateX(.25rem);
 }
 
-.services__modal{
+.services__modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -697,28 +697,53 @@ img {
   transition: .3s;
 }
 
-.services__modal-content{
+.services__modal-content {
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: .5rem;
+  width: auto; /* Genişliği otomatik ayarlar */
+  max-width: 90%; /* Maksimum genişlik */
+  max-height: 90%; /* Maksimum yükseklik */
+  overflow: auto; /* İçerik taşarsa kaydırma */
 }
 
-.services__modal-services{
-  row-gap: 1rem;
-}
-
-.services__modal-service{
+.services__modal-services {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-.services__modal-title{
+.services__modal-service {
+  text-align: center;
+  flex: 1 1 calc(25% - 20px); /* Her satırda 4 eleman olacak şekilde ayarlar */
+  box-sizing: border-box;
+}
+
+.services__modal-service a {
+  display: block;
+}
+
+.services__modal-service img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Altındaki yazı ile araya boşluk eklemek için */
+}
+
+.services__modal-service p {
+  margin: 0; /* Yazının sertifika altında düzgün bir şekilde yer almasını sağlar */
+}
+
+.services__modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
+  text-align: center;
 }
 
-.services__modal-close{
+.services__modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -727,13 +752,13 @@ img {
   cursor: pointer;
 }
 
-
-.services__modal-icon{
+.services__modal-icon {
   color: var(--first-color);
   margin-bottom: var(--mb-0-25);
 }
+
 /* Active Modal */
-.active-modal{
+.active-modal {
   opacity: 1;
   visibility: visible;
 }
