@@ -515,15 +515,15 @@ img {
 }
 
 .skills__html{ /* skill yüzdelerini buradan ayarla */
-  width: 90%;
+  width: 60%;
 }
 
 .skills__css{ 
-  width: 80%;
+  width: 70%;
 }
 
 .skills__java{ 
-  width: 70%;
+  width: 80%;
 }
 
 .skills__react{ 
@@ -531,15 +531,15 @@ img {
 }
 
 .skills__kotlin{ /*sonra buradaki değerleri değiştir */
-  width: 80%;
+  width: 40%;
 }
 
 .skills__flutter{ 
-  width: 80%;
+  width: 10%;
 }
 
 .skills__dart{ 
-  width: 50%;
+  width: 10%;
 }
 
 .skills__androidstudio{ 
@@ -547,11 +547,19 @@ img {
 }
 
 .skills__blender{ 
-  width: 80%;
+  width: 10%;
 }
 
 .skills__ps{ 
   width: 60%;
+}
+
+.skills__py{
+  width: 80%
+}
+
+.skills__sql{
+  width: 40%;
 }
 
 .skills__close .skills__list{
