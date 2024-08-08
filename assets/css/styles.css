@@ -822,6 +822,19 @@ img {
   content: '';
 }
 
+.modal-icon-wrapper {
+  display: flex;
+  align-items: baseline; /*yatayda hizalamak için kullanılır*/
+  justify-content: end; /* İkonları sola yaslayarak başlatmak için */
+  gap: 5px; /* İkonlar arasında boşluk bırakmak için */
+}
+
+i.modal-icon {
+  font-size: 40px; /* İkon boyutunu ayarlamak için */
+  line-height: 1; /* Dikey hizalamayı düzeltmek için */
+}
+
+
 .swiper-portfolio-icon{
   font-size: 2rem;
   color: var(--first-color);
