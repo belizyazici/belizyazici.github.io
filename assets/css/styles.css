@@ -562,6 +562,14 @@ img {
   width: 40%;
 }
 
+.skills__git{
+  width: 75%;
+}
+
+.skills__github{
+  width: 75%;
+}
+
 .skills__close .skills__list{
   height: 0;
   overflow: hidden;
