@@ -9,13 +9,11 @@ A personal portfolio website built using HTML, CSS, and JavaScript to showcase p
 ## Features
 
 - <b> Fully Responsive Design </b> – Adapts seamlessly to different screen sizes.
-
 - <b> Dark/Light Mode Toggle </b> – Users can switch between dark and light themes.
 
 ![image](https://github.com/user-attachments/assets/651600c6-cccb-45ea-9dca-8f32706d869f)
 
 - <b> Interactive Portfolio Section </b> – Displays projects with modal pop-ups.
-
 - <b> Smooth Animations </b> – Enhances user experience with modern UI effects.
 
 ![image](https://github.com/user-attachments/assets/2cd7dd0d-514a-4b51-8a45-0126b36c2a14)
@@ -27,19 +25,14 @@ A personal portfolio website built using HTML, CSS, and JavaScript to showcase p
 ## Technologies Used
 
 - <b> HTML </b> – Structuring the content.
-
 - <b> CSS </b> – Styling and layout.
-
 - <b> JavaScript </b> – Adding interactivity and dynamic features.
-
 - <b> Swiper.js </b> – Implementing a responsive slider.
 
 ## Usage
 
 Click on portfolio items to view more details in a modal.
-
 Use the dark/light mode button to switch themes.
-
 Navigate through projects using the slider arrows.
 
 
