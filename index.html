@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Beliz Yazıcı</title>
-        <script>
-            const emoji = "🍁"; 
-            const canvas = document.createElement("canvas");
-            canvas.width = 64;
-            canvas.height = 64;
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
-            const ctx = canvas.getContext("2d");
-            ctx.font = "48px serif";
-            ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
-            ctx.fillText(emoji, 32, 32);
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-            const link = document.createElement("link");
-            link.rel = "icon";
-            link.href = canvas.toDataURL();
-            document.head.appendChild(link);
-        </script>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Beliz</a>
-                <div class="nav__menu" id="nav-menu">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Beliz Yazıcı</title>
+    <script>
+        const emoji = "🍁";
+        const canvas = document.createElement("canvas");
+        canvas.width = 64;
+        canvas.height = 64;
+
+        const ctx = canvas.getContext("2d");
+        ctx.font = "48px serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(emoji, 32, 32);
+
+        const link = document.createElement("link");
+        link.rel = "icon";
+        link.href = canvas.toDataURL();
+        document.head.appendChild(link);
+    </script>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Beliz</a>
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#home" class="nav__link">
@@ -71,98 +73,103 @@
                     </li>
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
+            </div>
+        </nav>
+    </header>
 
-                <div class="nav__btns">
-                    <!--Theme change button-->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/belizyazici/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/belizyazici" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.behance.net/belizyazicii" target="_blank" class="home__social-icon">
+                            <i class="uil uil-behance"></i>
+                        </a>
+                        <a href="https://www.kaggle.com/belizyazici" target="_blank" class="home__social-icon">
+                            <i class="uil uil-letter-k">k</i>
+                        </a>
 
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
                     </div>
-                </div>
-            </nav>
-        </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/belizyazici/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://github.com/belizyazici" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                            <a href="https://www.behance.net/belizyazicii" target="_blank" class="home__social-icon">
-                                <i class="uil uil-behance"></i>
-                            </a>
-                            <a href="https://www.kaggle.com/belizyazici" target="_blank" class="home__social-icon">
-                                <i class="uil uil-letter-k">k</i>
-                            </a>
-                            
-                        </div>
-
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    
-                                    <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/profile1.png"/>
-                                </g>
-                            </svg>
-                        </div>
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
 
-                        <div class="home__data">
-                            <h1 class="home__title">Hello, I am Beliz</h1>
-                            <h3 class="home__subtitle">Software Engineer</h3>
-                            <p class="home__description">You can find more information about me below.</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
+                                <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/profile1.png" />
+                            </g>
+                        </svg>
                     </div>
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll Down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hello, I am Beliz</h1>
+                        <h3 class="home__subtitle">Software Engineer</h3>
+                        <p class="home__description">You can find more information about me below.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
-            </section>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-               <h2 class="section__title">About Me</h2> 
-               <span class="section__subtitle"></span>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle"></span>
 
-               <div class="about__container container grid">
+            <div class="about__container container grid">
                 <img src="assets/img/ist4.png" alt="" class="about__img">
-                
+
                 <div class="about__data">
                     <p class="about__description">
-                        I am Beliz, a software engineer continuously evolving through each project. 
-                        My journey began with taking classes at university, and over the past four years, I have improved my skills in game development, app development, and data science. 
-                        Each challenge has been a sprint towards refining my craft, from developing console projects to building real-time applications that handle dynamic data and user interaction.
-                        When I am not coding, or designing, I am playing games or learning new languages, always looking for the next opportunity to iterate and improve. 
-                        Explore my portfolio to see my process in action, and if you are interested in more details, feel free to download my resume.
+                        I am Beliz, a software engineer continuously evolving through each project.
+                        My journey began with taking classes at university, and over the past four years, I have
+                        improved my skills in game development, app development, and data science.
+                        Each challenge has been a sprint towards refining my craft, from developing console projects to
+                        building real-time applications that handle dynamic data and user interaction.
+                        When I am not coding, or designing, I am playing games or learning new languages, always looking
+                        for the next opportunity to iterate and improve.
+                        Explore my portfolio to see my process in action, and if you are interested in more details,
+                        feel free to download my resume.
 
 
                     </p>
-                
+
                     <!--<div class="about__info">
                          
                         <div>
@@ -189,51 +196,51 @@
                         </a>
                     </div>
                 </div>
-               </div>
-            </section>
+            </div>
+        </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">Technical Skills</span>
-              
-                <div class="skills__container container grid">
-                  <div>
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Technical Skills</span>
+
+            <div class="skills__container container grid">
+                <div>
                     <!--==================== SKILL 1 ====================-->
                     <div class="skills__content skills__open">
-                      <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <div>
-                          <h1 class="skills__titles">Game Development</h1>
-                          <span class="skills__subtitle"></span>
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">Game Development</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                      </div>
-              
-                      <div class="skills__list grid">
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Unity</h3>
-                            <span class="skills__number">60%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__html"></span>
-                          </div>
-                        </div>
-              
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">C#</h3>
-                            <span class="skills__number">70%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__css"></span>
-                          </div>
-                        </div>
-              
-                    
-              
-                        <!--<div class="skills__data">
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Unity</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C#</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+
+
+
+                            <!--<div class="skills__data">
                           <div class="skills__titles">
                             <h3 class="skills__name">React</h3>
                             <span class="skills__number">85%</span>
@@ -243,125 +250,125 @@
                           </div>
                         </div>-->
 
-                      </div>
+                        </div>
                     </div>
                     <!--==================== SKILL 2 ====================-->
                     <div class="skills__content skills__close">
-                      <div class="skills__header">
-                        <i class="uil uil-apps skills__icon"></i>
-                        <div>
-                          <h1 class="skills__titles">App Development</h1>
-                          <span class="skills__subtitle"></span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                      </div>
-              
-                      <div class="skills__list grid">
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Kotlin</h3>
-                            <span class="skills__number">40%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__kotlin"></span>
-                          </div>
-                        </div>
-              
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Flutter</h3>
-                            <span class="skills__number">10%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__flutter"></span>
-                          </div>
-                        </div>
-              
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Dart</h3>
-                            <span class="skills__number">10%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__dart"></span>
-                          </div>
+                        <div class="skills__header">
+                            <i class="uil uil-apps skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">App Development</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                              <h3 class="skills__name">Android Studio</h3>
-                              <span class="skills__number">50%</span>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Kotlin</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__kotlin"></span>
+                                </div>
                             </div>
-                            <div class="skills__bar">
-                              <span class="skills__percentage skills__androidstudio"></span>
-                            </div>
-                        </div>
 
-                      </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Flutter</h3>
+                                    <span class="skills__number">10%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flutter"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Dart</h3>
+                                    <span class="skills__number">10%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__dart"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Android Studio</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__androidstudio"></span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                     <!--==================== SKILL 5 ====================-->
-                  <div>
-                    <div class="skills__content skills__close">
-                      <div class="skills__header">
-                        <i class="uil uil-server-network skills__icon"></i>
-                        <div>
-                          <h1 class="skills__titles">Version Control</h1>
-                          <span class="skills__subtitle"></span>
+                    <div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Version Control</h1>
+                                    <span class="skills__subtitle"></span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__git"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">GitHub</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__github"></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                      </div>
-              
-                      <div class="skills__list grid">
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Git</h3>
-                            <span class="skills__number">75%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__git"></span>
-                          </div>
-                        </div>
-              
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">GitHub</h3>
-                            <span class="skills__number">75%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__github"></span>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  </div>
-                  
-                  <div>
-                  <!--==================== SKILL 3 ====================-->
-                  <div>
-                    <div class="skills__content skills__close">
-                      <div class="skills__header">
-                        <i class="uil uil-swatchbook skills__icon"></i>
-                        <div>
-                          <h1 class="skills__titles">Design</h1>
-                          <span class="skills__subtitle"></span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                      </div>
-              
-                      <div class="skills__list grid">
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Blender</h3>
-                            <span class="skills__number">40%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__blender"></span>
-                          </div>
-                        </div>
-              
-                        <!--<div class="skills__data">
+                </div>
+
+                <div>
+                    <!--==================== SKILL 3 ====================-->
+                    <div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-swatchbook skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Design</h1>
+                                    <span class="skills__subtitle"></span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Blender</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__blender"></span>
+                                    </div>
+                                </div>
+
+                                <!--<div class="skills__data">
                           <div class="skills__titles">
                             <h3 class="skills__name">Photoshop</h3>
                             <span class="skills__number">60%</span>
@@ -370,180 +377,182 @@
                             <span class="skills__percentage skills__ps"></span>
                           </div>
                         </div>-->
-                      </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
 
-                  <!--==================== SKILL 4 ====================-->
-                  <div>
-                    <div class="skills__content skills__close">
-                      <div class="skills__header">
-                        <i class="uil uil-web-grid skills__icon"></i>
-                        <div>
-                          <h1 class="skills__titles">Data Science</h1>
-                          <span class="skills__subtitle"></span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                      </div>
-              
-                      <div class="skills__list grid">
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Python</h3>
-                            <span class="skills__number">80%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__py"></span>
-                          </div>
-                        </div>
-              
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">SQL</h3>
-                            <span class="skills__number">60%</span>
-                          </div>                       
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__sql"></span>
-                          </div>
-                        </div>
+                    <!--==================== SKILL 4 ====================-->
+                    <div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-web-grid skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Data Science</h1>
+                                    <span class="skills__subtitle"></span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
 
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">R</h3>
-                            <span class="skills__number">50%</span>
-                          </div>                       
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__r"></span>
-                          </div>
-                        </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__py"></span>
+                                    </div>
+                                </div>
 
-                      </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">R</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__r"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                  </div>
 
-                  <!--==================== SKILL 5 ====================-->
-                  <div>
-                    <div class="skills__content skills__close">
-                      <div class="skills__header">
-                        <i class="uil uil-laptop skills__icon"></i>
-                        <div>
-                          <h1 class="skills__titles">Web Development</h1>
-                          <span class="skills__subtitle"></span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                      </div>
-              
-                      <div class="skills__list grid">
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">Java</h3>
-                            <span class="skills__number">80%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__java"></span>
-                          </div>
-                        </div>
-              
-                        <div class="skills__data">
-                          <div class="skills__titles">
-                            <h3 class="skills__name">SQL</h3>
-                            <span class="skills__number">60%</span>
-                          </div>
-                          <div class="skills__bar">
-                            <span class="skills__percentage skills__sql"></span>
-                          </div>
-                        </div>
+                    <!--==================== SKILL 5 ====================-->
+                    <div>
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-laptop skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Web Development</h1>
+                                    <span class="skills__subtitle"></span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
 
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                              <h3 class="skills__name">HTML</h3>
-                              <span class="skills__number">40%</span>
-                            </div>
-                            <div class="skills__bar">
-                              <span class="skills__percentage skills__sql"></span>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__java"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                              <h3 class="skills__name">CSS</h3>
-                              <span class="skills__number">40%</span>
-                            </div>
-                            <div class="skills__bar">
-                              <span class="skills__percentage skills__sql"></span>
-                            </div>
-                        </div>
-
-                      </div>
                     </div>
-                  </div>
-                  </div>
-
-                  
                 </div>
-              </section>
-              
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle"></span>
 
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex  qualification__active" data-target="#education">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-                        <div class="qualification__button button--flex" data-target="#experience">
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Experience
-                        </div>
+            </div>
+        </section>
+
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex  qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
                     </div>
+                    <div class="qualification__button button--flex" data-target="#experience">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Experience
+                    </div>
+                </div>
 
-                    <div class="qualification__sections">
-                        <!--==================== QUALIFICATION CONTENT 1====================-->
-                        <div class="qualification__content qualification__active" data-content id="education">
-                             <!--==================== QUALIFICATION 1====================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">BSc Software Engineering</h3>
-                                    <span class="qualification__subtitle">Izmir University of Economics <br> <em>Izmir, Turkey</em></span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - 2025
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION CONTENT 1====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">BSc Software Engineering</h3>
+                                <span class="qualification__subtitle">Izmir University of Economics <br> <em>Izmir,
+                                        Turkey</em></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 - 2025
                                 </div>
                             </div>
 
-                            <!--==================== QUALIFICATION 2====================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                                
-                                <div>
-                                    <h3 class="qualification__title">High School</h3>
-                                    <span class="qualification__subtitle">Bahcesehir Private High School <br> <em>Aydin, Turkey</em></span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2017 - 2021
-                                    </div>
-                                </div>
-
-                                
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
                             </div>
-                            
-                            <!--==================== QUALIFICATION 3====================-->
-                            <!--<div class="qualification__data">
+                        </div>
+
+                        <!--==================== QUALIFICATION 2====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">High School</h3>
+                                <span class="qualification__subtitle">Bahcesehir Private High School <br> <em>Aydin,
+                                        Turkey</em></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2021
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 3====================-->
+                        <!--<div class="qualification__data">
                                 <div>
                                     <h3 class="qualification__title">Software Engineer</h3>
                                     <span class="qualification__subtitle">Peru - University</span>
@@ -579,54 +588,55 @@
 
                                 
                             </div> -->
-                            
+
+                    </div>
+                    <!--==================== QUALIFICATION CONTENT 2====================-->
+                    <div class="qualification__content " data-content id="experience">
+                        <!--==================== QUALIFICATION 1====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Software Developer</h3>
+                                <span class="qualification__subtitle">Orris Academy <br> <em>Turkey</em></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    May 2024 - Jan 2025
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
                         </div>
-                        <!--==================== QUALIFICATION CONTENT 2====================-->
-                        <div class="qualification__content " data-content id="experience">
-                            <!--==================== QUALIFICATION 1====================-->
-                           <div class="qualification__data">
-                               <div>
-                                   <h3 class="qualification__title">Volunteer Software Developer</h3>
-                                   <span class="qualification__subtitle">Orris Academy <br> <em>Turkey</em></span>
-                                   <div class="qualification__calendar">
-                                       <i class="uil uil-calendar-alt"></i>
-                                       May 2024 - Jan 2025
-                                   </div>
-                               </div>
 
-                               <div>
-                                   <span class="qualification__rounder"></span>
-                                   <span class="qualification__line"></span>
-                               </div>
-                           </div>
 
-                           
-                           <!--==================== QUALIFICATION 2====================-->
-                           <div class="qualification__data">
+                        <!--==================== QUALIFICATION 2====================-->
+                        <div class="qualification__data">
 
                             <div></div>
 
-                               <div>
-                                   <span class="qualification__rounder"></span>
-                                   <span class="qualification__line"></span>
-                               </div>
-                               <div>
-                                   <h3 class="qualification__title">Game Developer Intern</h3>
-                                   <span class="qualification__subtitle">Blay Games <br> <em>Izmir, Turkey</em></span>
-                                   <div class="qualification__calendar">
-                                       <i class="uil uil-calendar-alt"></i>
-                                       Aug 2024 - Sep 2024
-                                   </div>
-                               </div>
-
-                            
-                           </div>
-
-                           <!--==================== QUALIFICATION 3====================-->
-                           <div class="qualification__data">
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
                             <div>
                                 <h3 class="qualification__title">Game Developer Intern</h3>
-                                <span class="qualification__subtitle">HCG Oyun ve Teknoloji A.Ş. (Mafia Games) <br> <em>Istanbul, Turkey</em></span>
+                                <span class="qualification__subtitle">Blay Games <br> <em>Izmir, Turkey</em></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Aug 2024 - Sep 2024
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 3====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Game Developer Intern</h3>
+                                <span class="qualification__subtitle">HCG Oyun ve Teknoloji A.Ş. (Mafia Games) <br>
+                                    <em>Istanbul, Turkey</em></span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     Jan 2024 - Feb 2024
@@ -639,582 +649,618 @@
                             </div>
                         </div>
 
-                           <!--==================== QUALIFICATION 4 ====================-->
-                           <div class="qualification__data">
+                        <!--==================== QUALIFICATION 4 ====================-->
+                        <div class="qualification__data">
 
                             <div></div>
 
-                               <div>
-                                   <span class="qualification__rounder"></span>
-                                   <span class="qualification__line"></span>
-                               </div>
-                               <div>
-                                   <h3 class="qualification__title">Volunteer Student Mentor</h3>
-                                   <span class="qualification__subtitle">Izmir University of Economics <br> <em>Izmir, Turkey</em></span>
-                                   <div class="qualification__calendar">
-                                       <i class="uil uil-calendar-alt"></i>
-                                       Aug 2023 - Feb 2024
-                                   </div>
-                               </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Volunteer Student Mentor</h3>
+                                <span class="qualification__subtitle">Izmir University of Economics <br> <em>Izmir,
+                                        Turkey</em></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Aug 2023 - Feb 2024
+                                </div>
+                            </div>
 
-                            
-                           </div>
 
-                           
-                       </div>
+                        </div>
+
+
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--==================== Certifications ====================-->
-            <section class="services section" id="services">
-                <h2 class="section__title">Certifications</h2>
-                <span class="section__subtitle"></span>
-                
-                <div class="services__container container grid">
-                    <!--==================== Field 1 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">Data <br> Science</h3>
-                        </div>
+        <!--==================== Certifications ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Certifications</h2>
+            <span class="section__subtitle"></span>
 
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
+            <div class="services__container container grid">
+                <!--==================== Field 1 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Data <br> Science</h3>
+                    </div>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Data Science</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
 
-                                <ul class="services__modal-services grid">
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Data Science</h4>
+                            <i class="uil uil-times services__modal-close"></i>
 
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://drive.google.com/file/d/1I4kaJTUIojiiFmZFuGWQ23QeQQrYWqiM/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\ai_fundamentals.png" alt="AI Fundamentals Certificate">
-                                        </a>
-                                        <p>AI Fundamentals with IBM SkillsBuild | Cisco</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://drive.google.com/file/d/1PCe8XRhCf-24JH1om3nTlhGAB4b2SXMy/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\da_cer.png" alt="Data Analysis Certificate">
-                                        </a>
-                                        <p>Data Analysis Bootcamp | Global AI Hub</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://drive.google.com/file/d/14GEapQ0M5ME_Tk2S_WXbfdFaL660wIZd/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\deeplearning.png" alt="Deep Learning Certificate">
-                                        </a>
-                                        <p>Deep Learning Bootcamp | Global AI Hub</p>
-                                    </li>
+                            <ul class="services__modal-services grid">
 
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/bd3250ca22af3283a970153865f7b1126efc18eb" target="_blank">
-                                            <img src="assets\img\intersql.png" alt="Intermediate SQL Certificate">
-                                        </a>
-                                        <p>Intermediate SQL | DataCamp</p>
-                                    </li>
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://drive.google.com/file/d/1I4kaJTUIojiiFmZFuGWQ23QeQQrYWqiM/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\ai_fundamentals.png" alt="AI Fundamentals Certificate">
+                                    </a>
+                                    <p>AI Fundamentals with IBM SkillsBuild | Cisco</p>
+                                </li>
 
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/146abc2dec2161231ba6fb23ca432354e70acf79" target="_blank">
-                                            <img src="assets\img\joinsql.png" alt="Joining Data in SQL Certificate">
-                                        </a>
-                                        <p>Joining Data in SQL | DataCamp</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://www.kaggle.com/learn/certification/belizyazici/pandas" target="_blank">
-                                            <img src="assets\img\pandas.png" alt="Pandas Certificate">
-                                        </a>
-                                        <p>Pandas | Kaggle</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://www.kaggle.com/learn/certification/belizyazici/intro-to-deep-learning" target="_blank">
-                                            <img src="assets\img\idpl.png" alt="Intro DL Certificate">
-                                        </a>
-                                        <p>Intro to Deep Learning | Kaggle</p>
-                                    </li>
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://drive.google.com/file/d/1PCe8XRhCf-24JH1om3nTlhGAB4b2SXMy/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\da_cer.png" alt="Data Analysis Certificate">
+                                    </a>
+                                    <p>Data Analysis Bootcamp | Global AI Hub</p>
+                                </li>
 
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://www.kaggle.com/learn/certification/belizyazici/intro-to-machine-learning" target="_blank">
-                                            <img src="assets\img\KaggleML.png" alt="Intro ML Certificate">
-                                        </a>
-                                        <p>Intro to Machine Learning | Kaggle</p>
-                                    </li>
-                                    
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://www.kaggle.com/learn/certification/belizyazici/python" target="_blank">
-                                            <img src="assets\img\KagglePython.png" alt="Python Certificate">
-                                        </a>
-                                        <p>Python | Kaggle</p>
-                                    </li>
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://drive.google.com/file/d/14GEapQ0M5ME_Tk2S_WXbfdFaL660wIZd/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\deeplearning.png" alt="Deep Learning Certificate">
+                                    </a>
+                                    <p>Deep Learning Bootcamp | Global AI Hub</p>
+                                </li>
 
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://drive.google.com/file/d/1bgmtzjVge1scO9A4d8uSGfS61ETR-FKB/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\python.jpg" alt="Python Bootcamp Certificate">
-                                        </a>
-                                        <p>Python Bootcamp | Akbank & Global AI Hub</p>
-                                    </li>
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/bd3250ca22af3283a970153865f7b1126efc18eb"
+                                        target="_blank">
+                                        <img src="assets\img\intersql.png" alt="Intermediate SQL Certificate">
+                                    </a>
+                                    <p>Intermediate SQL | DataCamp</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/146abc2dec2161231ba6fb23ca432354e70acf79"
+                                        target="_blank">
+                                        <img src="assets\img\joinsql.png" alt="Joining Data in SQL Certificate">
+                                    </a>
+                                    <p>Joining Data in SQL | DataCamp</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://www.kaggle.com/learn/certification/belizyazici/pandas"
+                                        target="_blank">
+                                        <img src="assets\img\pandas.png" alt="Pandas Certificate">
+                                    </a>
+                                    <p>Pandas | Kaggle</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://www.kaggle.com/learn/certification/belizyazici/intro-to-deep-learning"
+                                        target="_blank">
+                                        <img src="assets\img\idpl.png" alt="Intro DL Certificate">
+                                    </a>
+                                    <p>Intro to Deep Learning | Kaggle</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://www.kaggle.com/learn/certification/belizyazici/intro-to-machine-learning"
+                                        target="_blank">
+                                        <img src="assets\img\KaggleML.png" alt="Intro ML Certificate">
+                                    </a>
+                                    <p>Intro to Machine Learning | Kaggle</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://www.kaggle.com/learn/certification/belizyazici/python"
+                                        target="_blank">
+                                        <img src="assets\img\KagglePython.png" alt="Python Certificate">
+                                    </a>
+                                    <p>Python | Kaggle</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://drive.google.com/file/d/1bgmtzjVge1scO9A4d8uSGfS61ETR-FKB/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\python.jpg" alt="Python Bootcamp Certificate">
+                                    </a>
+                                    <p>Python Bootcamp | Akbank & Global AI Hub</p>
+                                </li>
 
 
-                                    <li class="services__modal-service">
-                                        <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
-                                        <a href="https://drive.google.com/file/d/1LZ4LiHnR4r9qxVBXoVVE66mOASsXn6Yp/view?usp=sharing" target="_blank"><img src="assets\img\intro_python.jpg" alt="Intro Python Certificate"></a>
-                                        <p>Introduction to Python | Global AI Hub</p>
-                                    </li>
+                                <li class="services__modal-service">
+                                    <!--<i class="uil uil-check-circle services__modal-icon"></i>-->
+                                    <a href="https://drive.google.com/file/d/1LZ4LiHnR4r9qxVBXoVVE66mOASsXn6Yp/view?usp=sharing"
+                                        target="_blank"><img src="assets\img\intro_python.jpg"
+                                            alt="Intro Python Certificate"></a>
+                                    <p>Introduction to Python | Global AI Hub</p>
+                                </li>
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
                     </div>
-                    <!--==================== Field 2 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-arrow services__icon"></i>
-                            <h3 class="services__title">Game <br> Development</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Game <br> Development</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-
-                                    <li class="services__modal-service">
-                                        <a href="https://verified.sertifier.com/en/verify/95940410234954/" target="_blank">
-                                            <img src="assets\img\95940410234954.png" alt="OUA Unity Certificate">
-                                        </a>
-                                        <p>Game Development using Unity | Oyun ve Uygulama Akademisi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://verified.sertifier.com/en/verify/37178930947696/" target="_blank">
-                                            <img src="assets\img\37178930947696.png" alt="OUA AI Unity Certificate">
-                                        </a>
-                                        <p>AI Integrated Game Development using Unity | Oyun ve Uygulama Akademisi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://verified.sertifier.com/en/verify/07004503100920/?ref=email" target="_blank">
-                                            <img src="assets\img\ai_jam.png" alt="AI Game Jam Certificate">
-                                        </a>
-                                        <p>AI Game Jam | Oyun ve Uygulama Akademisi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://verified.sertifier.com/en/verify/05274027925426/?ref=email" target="_blank">
-                                            <img src="assets\img\game_app_jam.png" alt="Game Jam Certificate">
-                                        </a>
-                                        <p>Game Jam | Oyun ve Uygulama Akademisi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1eHp-0C33UT0E-Cqc0iJ37RUaEfrk-3Hv/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\boot_oua.png" alt="Bootcamp Certificate">
-                                        </a>
-                                        <p>Game Development Bootcamp Certificate | Oyun ve Uygulama Akademisi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1YNuDW092LMSEwikY2TLe3FnQO7CxGChN/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\grad_oua.png" alt="Graduation Certificate">
-                                        </a>
-                                        <p>Game Development Graduation Certificate | Oyun ve Uygulama Akademisi</p>
-                                    </li>
-
-                                
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== Field 3 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-apps services__icon"></i>
-                            
-                            <h3 class="services__title">App <br> Development</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">App <br> Development</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    
-                                    <li class="services__modal-service">
-                                        <a href="https://verified.sertifier.com/en/verify/13615484811508/" target="_blank">
-                                            <img src="assets\img\13615484811508.png" alt="Flutter Certificate">
-                                        </a>
-                                        <p>App Development using Flutter | Oyun ve Uygulama Akademisi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1rocMBFuiC4YlOse2b-uIDKR4OkiNDazK/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\kotlin_btk.png" alt="Kotlin Btk Certificate">
-                                        </a>
-                                        <p>App Development using Kotlin | BTK Akademi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1d3Ep1o9C6eNB9NNsTZ88UBAHrpvcoNnQ/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\kotlin101.png" alt="Kotlin 101 Certificate">
-                                        </a>
-                                        <p>Kotlin 101 | Turkcell</p>
-                                    </li>
-
-                                
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== Field 4 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-file-alt services__icon"></i>
-                            <h3 class="services__title">Project <br> Management</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Project <br> Management</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <a href="https://www.coursera.org/account/accomplishments/specialization/3XDKI99YRZPX" target="_blank">
-                                            <img src="assets\img\pm_pro.png" alt="PM Pro Certificate">
-                                        </a>
-                                        <p>Google Project Management | Google</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://www.coursera.org/account/accomplishments/verify/2HLPY4A3XTH7" target="_blank">
-                                            <img src="assets\img\pm6.jpeg" alt="PM6 Certificate">
-                                        </a>
-                                        <p>Capstone: Applying Project Management in the Real World | Google</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://www.coursera.org/account/accomplishments/verify/ERMYCKPCP956" target="_blank">
-                                            <img src="assets\img\pm5.jpeg" alt="PM5 Certificate">
-                                        </a>
-                                        <p>Agile Project Management | Google</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://www.coursera.org/account/accomplishments/verify/ZNKLN5S5363D" target="_blank">
-                                            <img src="assets\img\pm4.jpeg" alt="PM4 Certificate">
-                                        </a>
-                                        <p>Project Execution: Running the Project | Google</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://www.coursera.org/account/accomplishments/verify/7RBRT5WCHF83" target="_blank">
-                                            <img src="assets\img\pm3.jpeg" alt="PM3 Certificate">
-                                        </a>
-                                        <p>Project Planning: Putting It All Together | Google</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://www.coursera.org/account/accomplishments/verify/72KB6U28LVX5" target="_blank">
-                                            <img src="assets\img\pm2.jpeg" alt="PM2 Certificate">
-                                        </a>
-                                        <p>Project Initiation: Starting a Successful Project | Google</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://www.coursera.org/account/accomplishments/verify/DB57AUUKA79M" target="_blank">
-                                            <img src="assets\img\pm1.jpeg" alt="PM1 Certificate">
-                                        </a>
-                                        <p>Fundamentals of Project Management | Google</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <!--==================== Field 5 ====================-->
-                     <div class="services__content">
-                        <div>
-                            <i class="uil uil-laptop services__icon"></i>
-                            <h3 class="services__title">Web <br> Development</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Web <br> Development</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <a href="https://www.udemy.com/certificate/UC-d150594b-a134-4d72-a0d7-d9f23f50d43d/" target="_blank">
-                                            <img src="assets\img\java_udemy.jpg" alt="Java Certificate">
-                                        </a>
-                                        <p>Java Programming Masterclass | Udemy</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1co02xm89t7iz_LZWAWSDyfj-OAYVkK3s/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\metu.png" alt="HTML Certificate">
-                                        </a>
-                                        <p>Basics of Web Design: HTML & CSS | METU</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== Field 6 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-medal services__icon"></i>
-                            <h3 class="services__title">Honors <br> and Awards</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Honors <br> and Awards</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1WipcHwA2dB5n9kJe3gx0Q6mmiVmVca57/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\high_honour2022.jpeg" alt="High Honour Certificate">
-                                        </a>
-                                        <p>High Honour Student 2021-2022 | Izmir University of Economics</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1DI4ulVn44_h-3vDlfweW6odorFAhDeZx/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\honour2022.jpeg" alt="Honour Certificate">
-                                        </a>
-                                        <p>Honour Student 2022-2023 | Izmir University of Economics</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <!--==================== Field 7 ====================-->
-                     <div class="services__content">
-                        <div>
-                            <i class="uil uil-plus services__icon"></i>
-                            <h3 class="services__title">Other <br> Certifications</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Other <br> Certifications</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-
-                                    <li class="services__modal-service">
-                                        <a href="https://cert.efset.org/tr/qr6nuP" target="_blank">
-                                            <img src="assets\img\efset.png" alt="English Certificate">
-                                        </a>
-                                        <p>Official English C1 Advanced Certificate | EF SET</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/1vb_VP5khoUUXp-UUwORPmqVsIVRqo8-E/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\vc.png" alt="Version Control Certificate">
-                                        </a>
-                                        <p>Version Controls: Git and GitHub | BTK Akademi</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <a href="https://drive.google.com/file/d/19tkCbgO9LNzgVPGoJfEyBMUG3Le6Zake/view?usp=sharing" target="_blank">
-                                            <img src="assets\img\safety.png" alt="Safety Certificate">
-                                        </a>
-                                        <p>Basic Occupational Health and Safety | Izmir University of Economics</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     
                 </div>
-            </section>
+                <!--==================== Field 2 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Game <br> Development</h3>
+                    </div>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle"></span>
-            
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        
-                         <!-- Portfolio Item 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/r.png" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Vision-Based Sensing and Navigation for an Autonomous Restaurant Robot Using YOLO</h3>
-                                <p class="portfolio__description">In this project, the robot integrates YOLOv8, an Intel RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real time, especially in crowded and dynamic environments.
-</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link="https://www.linkedin.com/feed/update/urn:li:activity:7332154010767912960"
-                                   data-link2="https://www.linkedin.com/feed/update/urn:li:activity:7332154010767912960/"
-                                   data-image="assets/img/robot.png"
-                                
-                                   data-modal-description="In this project, our robot integrates YOLOv8, an Intel RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real time, especially in crowded and dynamic environments. By combining both color and depth data from the environment, our system can:
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Game <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+
+                                <li class="services__modal-service">
+                                    <a href="https://verified.sertifier.com/en/verify/95940410234954/" target="_blank">
+                                        <img src="assets\img\95940410234954.png" alt="OUA Unity Certificate">
+                                    </a>
+                                    <p>Game Development using Unity | Oyun ve Uygulama Akademisi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://verified.sertifier.com/en/verify/37178930947696/" target="_blank">
+                                        <img src="assets\img\37178930947696.png" alt="OUA AI Unity Certificate">
+                                    </a>
+                                    <p>AI Integrated Game Development using Unity | Oyun ve Uygulama Akademisi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://verified.sertifier.com/en/verify/07004503100920/?ref=email"
+                                        target="_blank">
+                                        <img src="assets\img\ai_jam.png" alt="AI Game Jam Certificate">
+                                    </a>
+                                    <p>AI Game Jam | Oyun ve Uygulama Akademisi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://verified.sertifier.com/en/verify/05274027925426/?ref=email"
+                                        target="_blank">
+                                        <img src="assets\img\game_app_jam.png" alt="Game Jam Certificate">
+                                    </a>
+                                    <p>Game Jam | Oyun ve Uygulama Akademisi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1eHp-0C33UT0E-Cqc0iJ37RUaEfrk-3Hv/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\boot_oua.png" alt="Bootcamp Certificate">
+                                    </a>
+                                    <p>Game Development Bootcamp Certificate | Oyun ve Uygulama Akademisi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1YNuDW092LMSEwikY2TLe3FnQO7CxGChN/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\grad_oua.png" alt="Graduation Certificate">
+                                    </a>
+                                    <p>Game Development Graduation Certificate | Oyun ve Uygulama Akademisi</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== Field 3 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-apps services__icon"></i>
+
+                        <h3 class="services__title">App <br> Development</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">App <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+
+                                <li class="services__modal-service">
+                                    <a href="https://verified.sertifier.com/en/verify/13615484811508/" target="_blank">
+                                        <img src="assets\img\13615484811508.png" alt="Flutter Certificate">
+                                    </a>
+                                    <p>App Development using Flutter | Oyun ve Uygulama Akademisi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1rocMBFuiC4YlOse2b-uIDKR4OkiNDazK/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\kotlin_btk.png" alt="Kotlin Btk Certificate">
+                                    </a>
+                                    <p>App Development using Kotlin | BTK Akademi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1d3Ep1o9C6eNB9NNsTZ88UBAHrpvcoNnQ/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\kotlin101.png" alt="Kotlin 101 Certificate">
+                                    </a>
+                                    <p>Kotlin 101 | Turkcell</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== Field 4 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-file-alt services__icon"></i>
+                        <h3 class="services__title">Project <br> Management</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Project <br> Management</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/3XDKI99YRZPX"
+                                        target="_blank">
+                                        <img src="assets\img\pm_pro.png" alt="PM Pro Certificate">
+                                    </a>
+                                    <p>Google Project Management | Google</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/2HLPY4A3XTH7"
+                                        target="_blank">
+                                        <img src="assets\img\pm6.jpeg" alt="PM6 Certificate">
+                                    </a>
+                                    <p>Capstone: Applying Project Management in the Real World | Google</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/ERMYCKPCP956"
+                                        target="_blank">
+                                        <img src="assets\img\pm5.jpeg" alt="PM5 Certificate">
+                                    </a>
+                                    <p>Agile Project Management | Google</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/ZNKLN5S5363D"
+                                        target="_blank">
+                                        <img src="assets\img\pm4.jpeg" alt="PM4 Certificate">
+                                    </a>
+                                    <p>Project Execution: Running the Project | Google</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/7RBRT5WCHF83"
+                                        target="_blank">
+                                        <img src="assets\img\pm3.jpeg" alt="PM3 Certificate">
+                                    </a>
+                                    <p>Project Planning: Putting It All Together | Google</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/72KB6U28LVX5"
+                                        target="_blank">
+                                        <img src="assets\img\pm2.jpeg" alt="PM2 Certificate">
+                                    </a>
+                                    <p>Project Initiation: Starting a Successful Project | Google</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/DB57AUUKA79M"
+                                        target="_blank">
+                                        <img src="assets\img\pm1.jpeg" alt="PM1 Certificate">
+                                    </a>
+                                    <p>Fundamentals of Project Management | Google</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== Field 5 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-laptop services__icon"></i>
+                        <h3 class="services__title">Web <br> Development</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Web <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <a href="https://www.udemy.com/certificate/UC-d150594b-a134-4d72-a0d7-d9f23f50d43d/"
+                                        target="_blank">
+                                        <img src="assets\img\java_udemy.jpg" alt="Java Certificate">
+                                    </a>
+                                    <p>Java Programming Masterclass | Udemy</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1co02xm89t7iz_LZWAWSDyfj-OAYVkK3s/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\metu.png" alt="HTML Certificate">
+                                    </a>
+                                    <p>Basics of Web Design: HTML & CSS | METU</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== Field 6 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-medal services__icon"></i>
+                        <h3 class="services__title">Honors <br> and Awards</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Honors <br> and Awards</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1WipcHwA2dB5n9kJe3gx0Q6mmiVmVca57/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\high_honour2022.jpeg" alt="High Honour Certificate">
+                                    </a>
+                                    <p>High Honour Student 2021-2022 | Izmir University of Economics</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1DI4ulVn44_h-3vDlfweW6odorFAhDeZx/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\honour2022.jpeg" alt="Honour Certificate">
+                                    </a>
+                                    <p>Honour Student 2022-2023 | Izmir University of Economics</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== Field 7 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-plus services__icon"></i>
+                        <h3 class="services__title">Other <br> Certifications</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Other <br> Certifications</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+
+                                <li class="services__modal-service">
+                                    <a href="https://cert.efset.org/tr/qr6nuP" target="_blank">
+                                        <img src="assets\img\efset.png" alt="English Certificate">
+                                    </a>
+                                    <p>Official English C1 Advanced Certificate | EF SET</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/1vb_VP5khoUUXp-UUwORPmqVsIVRqo8-E/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\vc.png" alt="Version Control Certificate">
+                                    </a>
+                                    <p>Version Controls: Git and GitHub | BTK Akademi</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <a href="https://drive.google.com/file/d/19tkCbgO9LNzgVPGoJfEyBMUG3Le6Zake/view?usp=sharing"
+                                        target="_blank">
+                                        <img src="assets\img\safety.png" alt="Safety Certificate">
+                                    </a>
+                                    <p>Basic Occupational Health and Safety | Izmir University of Economics</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/r.png" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Vision-Based Sensing and Navigation for an Autonomous
+                                Restaurant Robot Using YOLO</h3>
+                            <p class="portfolio__description">In this project, the robot integrates YOLOv8, an Intel
+                                RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real
+                                time, especially in crowded and dynamic environments.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link="https://www.linkedin.com/feed/update/urn:li:activity:7332154010767912960"
+                                data-link2="https://www.linkedin.com/feed/update/urn:li:activity:7332154010767912960/"
+                                data-image="assets/img/robot.png" data-modal-description="In this project, our robot integrates YOLOv8, an Intel RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real time, especially in crowded and dynamic environments. By combining both color and depth data from the environment, our system can:
 Detect tables and numbers with high accuracy, recognize digits within the robot’s field of view, analyze object positions and orientations in 3D space, perform dynamic route planning and obstacle avoidance — all without relying on preloaded maps.
 
 As a highlight, we had the opportunity to present our graduation project, “Vision-Based Sensing and Navigation for an Autonomous Restaurant Robot Using YOLO,” at the Young Brains, New Ideas (GBYF) competition held at İzmir Bakırçay University. We are proud that our project was selected as one of the top 6 finalists and earned the opportunity to be presented to the jury.
 ">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
+                    </div>
 
-                        <!-- Portfolio Item 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/av.jpg" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Aura Vision</h3>
-                                <p class="portfolio__description">AuraVision is an interactive AI-powered web application that was developed for Lenovo's "Your Aura is Limitless" campaign.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link="https://www.youtube.com/watch?v=PWLhnZMRNPg&t=81s"
-                                   data-link2="https://github.com/belizyazici/AuraVision"
-                                   data-image="assets/img/av2.png"
-                                
-                                   data-modal-description="AuraVision is an interactive AI-powered web application that analyzes the user's emotional state based on their input text and presents a personalized laptop advertisement visual aligned with their current mood.">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/av.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Aura Vision</h3>
+                            <p class="portfolio__description">AuraVision is an interactive AI-powered web application
+                                that was developed for Lenovo's "Your Aura is Limitless" campaign.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link="https://www.youtube.com/watch?v=PWLhnZMRNPg&t=81s"
+                                data-link2="https://github.com/belizyazici/AuraVision" data-image="assets/img/av2.png"
+                                data-modal-description="AuraVision is an interactive AI-powered web application that analyzes the user's emotional state based on their input text and presents a personalized laptop advertisement visual aligned with their current mood.">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
-                        
-                        <!-- Portfolio Item 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/ders.jpg" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Ders Odam</h3>
-                                <p class="portfolio__description">Ders Odam is an educational website where middle school students can watch lesson videos and receive help from a chatbot powered by Gemini AI.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link="https://www.youtube.com/watch?v=hAsXT4aibZU"
-                                   data-link2="https://github.com/belizyazici/AIHackathon24"
-                                   data-image="assets/img/dersodam.png"
-                                
-                                   data-modal-description="Ders Odam is a comprehensive website designed to assist middle school students in their studies by providing a variety of educational resources, interactive chat with a bot, and access to educational videos tailored to their curriculum. The platform covers multiple subjects and promotes interactive learning.">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
+                    </div>
 
-                        <!-- Portfolio Item 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/jobai.png" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Data Analysis of Job Loss Due To AI</h3>
-                                <p class="portfolio__description">This project focuses on examining the impact of Artificial Intelligence on various industries using the "Impact of AI on Digital Media" dataset from the Kaggle platform.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link=""
-                                   data-link2="https://github.com/belizyazici/Data-Analysis-of-Job-Loss-Due-to-AI"
-                                   data-image="assets/img/jobai.png"
-                                
-                                   data-modal-description="This project focuses on examining the impact of AI on various industries. Using the Impact of AI on Digital Media (2020-2025) Dataset obtained from the Kaggle platform, the analysis explores how AI adoption correlates with industry performance, regulatory responses, and social outcomes. The findings are compared to previous research in the field to provide context and evaluate alignment or divergence in results.">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/ders.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Ders Odam</h3>
+                            <p class="portfolio__description">Ders Odam is an educational website where middle school
+                                students can watch lesson videos and receive help from a chatbot powered by Gemini AI.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link="https://www.youtube.com/watch?v=hAsXT4aibZU"
+                                data-link2="https://github.com/belizyazici/AIHackathon24"
+                                data-image="assets/img/dersodam.png"
+                                data-modal-description="Ders Odam is a comprehensive website designed to assist middle school students in their studies by providing a variety of educational resources, interactive chat with a bot, and access to educational videos tailored to their curriculum. The platform covers multiple subjects and promotes interactive learning.">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
-                        
-                        <!-- Portfolio Item 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/Untitled (11).png" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Data Analysis of Olympic History</h3>
-                                <p class="portfolio__description">The project is centered on analyzing historical data from the Olympic Games. It provides insights into trends, relationships between variables, and the distribution of athletes' characteristics such as age, height, weight, and medal achievements.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link=" "
-                                   data-link2="https://github.com/belizyazici/Data_Analysis_of_Olympic_History"
-                                   data-image="assets/img/Untitled (11).png" 
-                                
-                                   data-modal-description=" This project explores the history of the Olympic Games through data analysis using Python libraries such as Pandas and Matplotlib. It involves cleaning and visualizing a dataset from Kaggle to uncover trends like the most successful countries, gender distribution of athletes, and the evolution of sports over time. ">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        
+                    </div>
 
-                        <!-- Portfolio Item 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Virus Vanguard</h3>
-                                <p class="portfolio__description">Virus Vanguard is a 3D survival game where players find themselves during an invasion, with infected patients relentlessly attempting to spread the virus to healthy individuals.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link="https://www.youtube.com/watch?v=OR8-sTPZEUU&list=LL&index=11&t=60s&pp=gAQBiAQB"
-                                   data-link2="https://github.com/HasanEfeDinc/SE-330"
-                                   data-image="assets/img/zombie.png"
-                                
-                                   data-modal-description="Virus Vanguard is a virus-themed game where survival is the ultimate goal. In this game, players find themselves during an invasion, with infected patients relentlessly attempting to spread the virus to healthy individuals. The player’s mission is clear: either eliminate all infected threats or endure the attacks until a predetermined virus limit is reached. The player must navigate through the chaos and find their loved ones while avoiding infection.">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/jobai.png" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Data Analysis of Job Loss Due To AI</h3>
+                            <p class="portfolio__description">This project focuses on examining the impact of Artificial
+                                Intelligence on various industries using the "Impact of AI on Digital Media" dataset
+                                from the Kaggle platform.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button" data-link=""
+                                data-link2="https://github.com/belizyazici/Data-Analysis-of-Job-Loss-Due-to-AI"
+                                data-image="assets/img/jobai.png"
+                                data-modal-description="This project focuses on examining the impact of AI on various industries. Using the Impact of AI on Digital Media (2020-2025) Dataset obtained from the Kaggle platform, the analysis explores how AI adoption correlates with industry performance, regulatory responses, and social outcomes. The findings are compared to previous research in the field to provide context and evaluate alignment or divergence in results.">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
-                        <!-- Portfolio Item 2 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/love.png" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Unlocker's Tale</h3>
-                                <p class="portfolio__description">Unlocker's Tale is a 3D third-person adventure game that has three levels and in each level, the player has to find the keys of the doors to unlock and get out of there.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link="https://www.youtube.com/watch?v=QhYDi_K88aM&list=LL&index=40&pp=gAQBiAQB"
-                                   data-link2="https://github.com/cansuarslangiray/UnlockersTale"
-                                   data-image="assets/img/key.png"
-                                   data-modal-description="Unlocker’s Tale is a 3D third-person adventure game inspired by Open the Door: A Short Story. The game consists of three levels, each with a different playing style, but the objective remains the same: find the key in each level to open the doors and progress to the next level.">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                    </div>
+
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Untitled (11).png" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Data Analysis of Olympic History</h3>
+                            <p class="portfolio__description">The project is centered on analyzing historical data from
+                                the Olympic Games. It provides insights into trends, relationships between variables,
+                                and the distribution of athletes' characteristics such as age, height, weight, and medal
+                                achievements.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button" data-link=" "
+                                data-link2="https://github.com/belizyazici/Data_Analysis_of_Olympic_History"
+                                data-image="assets/img/Untitled (11).png"
+                                data-modal-description=" This project explores the history of the Olympic Games through data analysis using Python libraries such as Pandas and Matplotlib. It involves cleaning and visualizing a dataset from Kaggle to uncover trends like the most successful countries, gender distribution of athletes, and the evolution of sports over time. ">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
-                        <!-- Portfolio Item 3 -->
-                        <!--<div class="portfolio__content grid swiper-slide">
+                    </div>
+
+
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Virus Vanguard</h3>
+                            <p class="portfolio__description">Virus Vanguard is a 3D survival game where players find
+                                themselves during an invasion, with infected patients relentlessly attempting to spread
+                                the virus to healthy individuals.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link="https://www.youtube.com/watch?v=OR8-sTPZEUU&list=LL&index=11&t=60s&pp=gAQBiAQB"
+                                data-link2="https://github.com/HasanEfeDinc/SE-330" data-image="assets/img/zombie.png"
+                                data-modal-description="Virus Vanguard is a virus-themed game where survival is the ultimate goal. In this game, players find themselves during an invasion, with infected patients relentlessly attempting to spread the virus to healthy individuals. The player’s mission is clear: either eliminate all infected threats or endure the attacks until a predetermined virus limit is reached. The player must navigate through the chaos and find their loved ones while avoiding infection.">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/love.png" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Unlocker's Tale</h3>
+                            <p class="portfolio__description">Unlocker's Tale is a 3D third-person adventure game that
+                                has three levels and in each level, the player has to find the keys of the doors to
+                                unlock and get out of there.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link="https://www.youtube.com/watch?v=QhYDi_K88aM&list=LL&index=40&pp=gAQBiAQB"
+                                data-link2="https://github.com/cansuarslangiray/UnlockersTale"
+                                data-image="assets/img/key.png"
+                                data-modal-description="Unlocker’s Tale is a 3D third-person adventure game inspired by Open the Door: A Short Story. The game consists of three levels, each with a different playing style, but the objective remains the same: find the key in each level to open the doors and progress to the next level.">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <!--<div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Whisk's Journey</h3>
@@ -1228,118 +1274,124 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
                                 </a>
                             </div>
                         </div>-->
-                        <!-- Portfolio Item 4 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio4.jpg" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Dimensional Guardian</h3>
-                                <p class="portfolio__description">
-                                    Dimensional Guardian is a 3D battleground survival game set in the dark and challenging Middle Ages. 
-                                    The character travels between two dimensions via a portal, battling various harmful enemies and terrifying creatures to achieve victory.
-                                </p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link="https://www.youtube.com/watch?v=tlhcy4fOI5I"
-                                   data-link2="https://github.com/ate44/BOOTCAMPUNITY-3"
-                                   data-image="assets/img/guardian.png"
-                                   data-modal-description="Dimensional Guardian takes us to the dark and challenging times of the Middle Ages in a 3D battleground survival game. In this game, our character tries to survive by traveling between two dimensions through a portal. While battling various enemies during the day, the character faces a mountain troll in the cold of winter. The character, controlled by a third-person controller, fights against harmful enemies and terrifying creatures to achieve victory. ">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio4.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Dimensional Guardian</h3>
+                            <p class="portfolio__description">
+                                Dimensional Guardian is a 3D battleground survival game set in the dark and challenging
+                                Middle Ages.
+                                The character travels between two dimensions via a portal, battling various harmful
+                                enemies and terrifying creatures to achieve victory.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link="https://www.youtube.com/watch?v=tlhcy4fOI5I"
+                                data-link2="https://github.com/ate44/BOOTCAMPUNITY-3"
+                                data-image="assets/img/guardian.png"
+                                data-modal-description="Dimensional Guardian takes us to the dark and challenging times of the Middle Ages in a 3D battleground survival game. In this game, our character tries to survive by traveling between two dimensions through a portal. While battling various enemies during the day, the character faces a mountain troll in the cold of winter. The character, controlled by a third-person controller, fights against harmful enemies and terrifying creatures to achieve victory. ">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
-                        <!-- Portfolio Item 4 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/mm.png" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Mind Mosaic</h3>
-                                <p class="portfolio__description">
-                                    Mind Mosaic is a runner game where the player must navigate a straight path, collect items, and avoid obstacles to achieve victory. The game is designed to test your reflexes and strategy while providing an engaging and visually captivating experience.
-                                </p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link2="https://github.com/belizyazici/MindMosaic"
-                                   data-image="assets/img/mind.png"
-                                   data-modal-description="In Mind Mosaic, you step into the shoes of a character who has lost their memories and the cherished moments spent with loved ones. To reclaim these memories, the character embarks on a journey where they must collect items tied to specific individuals from their past. Each level represents a different person, and only by gathering the required number of items can the character unlock the memories associated with them. The game challenges players to navigate through paths filled with collectables and obstacles, balancing speed and precision. 
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/mm.png" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Mind Mosaic</h3>
+                            <p class="portfolio__description">
+                                Mind Mosaic is a runner game where the player must navigate a straight path, collect
+                                items, and avoid obstacles to achieve victory. The game is designed to test your
+                                reflexes and strategy while providing an engaging and visually captivating experience.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link2="https://github.com/belizyazici/MindMosaic" data-image="assets/img/mind.png"
+                                data-modal-description="In Mind Mosaic, you step into the shoes of a character who has lost their memories and the cherished moments spent with loved ones. To reclaim these memories, the character embarks on a journey where they must collect items tied to specific individuals from their past. Each level represents a different person, and only by gathering the required number of items can the character unlock the memories associated with them. The game challenges players to navigate through paths filled with collectables and obstacles, balancing speed and precision. 
 
 ">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
-                        <!-- Portfolio Item 4 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/wthrlogo1.png" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Weather App</h3>
-                                <p class="portfolio__description">
-                                    Weather App provides weather information for all 81 cities in Turkey. Users can view today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for temperature readings.
-                                </p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link2="https://github.com/belizyazici/WeatherApp"
-                                   data-image="assets/img/weather.png"
-                                   data-modal-description="Weather App provides weather information for all 81 cities in Turkey. Users can view today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for temperature readings.
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/wthrlogo1.png" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Weather App</h3>
+                            <p class="portfolio__description">
+                                Weather App provides weather information for all 81 cities in Turkey. Users can view
+                                today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow
+                                and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for
+                                temperature readings.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link2="https://github.com/belizyazici/WeatherApp"
+                                data-image="assets/img/weather.png" data-modal-description="Weather App provides weather information for all 81 cities in Turkey. Users can view today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for temperature readings.
 
 ">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 5 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/pizza.png" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Pizza Ordering System</h3>
-                                <p class="portfolio__description">
-                                    Pizza Ordering System reads the menu from a text file, takes order information from the user, and writes the order details into a CSV file.
-                                </p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link2="https://github.com/belizyazici/PizzaOrderingSystem"
-                                   data-image="assets/img/order.png"
-                                   data-modal-description="Pizza Ordering System reads the menu from a text file, takes order information from the user, and writes the order details into a CSV file">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
                     </div>
-            
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/pizza.png" alt="" class="portfolio_img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Pizza Ordering System</h3>
+                            <p class="portfolio__description">
+                                Pizza Ordering System reads the menu from a text file, takes order information from the
+                                user, and writes the order details into a CSV file.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button"
+                                data-link2="https://github.com/belizyazici/PizzaOrderingSystem"
+                                data-image="assets/img/order.png"
+                                data-modal-description="Pizza Ordering System reads the menu from a text file, takes order information from the user, and writes the order details into a CSV file">
+                                More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
                     </div>
-            
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-            
-                    <div class="swiper-pagination"></div>
                 </div>
-            </section>
-            
-            <!-- Modal Structure -->
-            <div id="portfolioModal" class="modal">
-                <div class="modal-content">
-                    <span class="modal-close">&times;</span>
-                    <h3 class="modal-title">Project Title</h3>
-                    <p class="modal-description">Project description goes here.</p>
-                
-                    <div id="portfolioModalImages" class="portfolio__modal-images">
-                        <img class="modal-image" src="" alt="Project Image" style="width:100%; display:none;">
-                        
-                    </div>
-                    <div class="modal-icon-wrapper">
-                        <a class="modal-link" href="#" target="_blank" style="display:none;">
-                            <i class="uil uil-youtube modal-icon"></i>
-                        </a>
-                        <a class="modal-link2" href="#" target="_blank" style="display:none;">
-                            <i class="uil uil-github-alt modal-icon"></i>
-                        </a>
-                    </div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Modal Structure -->
+        <div id="portfolioModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h3 class="modal-title">Project Title</h3>
+                <p class="modal-description">Project description goes here.</p>
+
+                <div id="portfolioModalImages" class="portfolio__modal-images">
+                    <img class="modal-image" src="" alt="Project Image" style="width:100%; display:none;">
+
+                </div>
+                <div class="modal-icon-wrapper">
+                    <a class="modal-link" href="#" target="_blank" style="display:none;">
+                        <i class="uil uil-youtube modal-icon"></i>
+                    </a>
+                    <a class="modal-link2" href="#" target="_blank" style="display:none;">
+                        <i class="uil uil-github-alt modal-icon"></i>
+                    </a>
                 </div>
             </div>
-            
-            
-            
-            
+        </div>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <!--<section class="project section">
+
+
+
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <!--<section class="project section">
                 <div class="project__bg">
                     <div class="project__container container grid">
                         <div class="project__data">
@@ -1356,8 +1408,8 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
                 </div>
             </section>-->
 
-            <!--==================== TESTIMONIAL Reference ====================-->
-            <!--<section class="testimonial section">
+        <!--==================== TESTIMONIAL Reference ====================-->
+        <!--<section class="testimonial section">
                 <h2 class="section__title">References</h2>
                 <span class="section__subtitle"></span>
 
@@ -1385,9 +1437,9 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
                             </div>
 
                             <p class="testimonial__description">Reference's thoughts here</p>
-                        </div>--> 
+                        </div>-->
 
-                        <!--==================== TESTIMONIAL Reference 2 ====================
+        <!--==================== TESTIMONIAL Reference 2 ====================
                         <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
@@ -1411,8 +1463,8 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
                             <p class="testimonial__description">Reference's thoughts here</p>
                         </div>-->
 
-                        <!--==================== TESTIMONIAL Reference 3 ====================-->
-                       <!-- <div class="testimonial__content swiper-slide">
+        <!--==================== TESTIMONIAL Reference 3 ====================-->
+        <!-- <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
                                     <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
@@ -1434,20 +1486,20 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
 
                             <p class="testimonial__description">Reference's thoughts here</p>
                         </div>-->
-                <!--   </div>
+        <!--   </div>
 
                     <div class="swiper-pagination swiper-pagination-testimonial"></div>
                 </div>
             </section>-->
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle"></span>
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle"></span>
 
-                <div class="contact__container container grid">
-                    <div>
-                        <!-- 
+            <div class="contact__container container grid">
+                <div>
+                    <!-- 
                         <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
 
@@ -1458,17 +1510,17 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
                             </div>
                         </div>-->
 
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
 
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">belizyazici09@gmail.com</span>
-                            </div>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">belizyazici09@gmail.com</span>
                         </div>
-
                     </div>
-                    <!-- 
+
+                </div>
+                <!-- 
                     <form action="" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
@@ -1499,24 +1551,25 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
                             </a>
                         </div>
                     </form>-->
-                </div>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+    </footer>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
