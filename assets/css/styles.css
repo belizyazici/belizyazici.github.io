@@ -569,11 +569,15 @@ img {
 }
 
 .skills__sql {
-  width: 60%;
+  width: 80%;
 }
 
 .skills__mysql {
   width: 60%;
+}
+
+.skills__postgresql {
+  width: 70%;
 }
 
 .skills__r {
