@@ -494,6 +494,10 @@ img {
 .skills__list {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .skills__titles {
@@ -520,6 +524,55 @@ img {
 .skills__percentage {
   display: block;
   background-color: var(--first-color);
+}
+
+.skills__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.skills__data {
+  display: inline-block;
+}
+
+.skills__badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+  border-radius: 10px;
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition: 0.3s;
+
+  transition: transform 0.2s ease;
+}
+
+.skills__badge img {
+  width: 20px;
+  height: 20px;
+}
+
+.skills__badge:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+:root {
+  --container-color: #ffffff;
+  --title-color: #222;
+}
+
+body.dark-theme {
+  --container-color: #1f1f1f;
+  --title-color: #f1f1f1;
 }
 
 .skills__html {
