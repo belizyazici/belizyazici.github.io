@@ -1080,241 +1080,224 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle"></span>
 
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
+            <div class="portfolio__filters">
+                <span class="portfolio__filter active-filter" data-filter="all">All</span>
+                <span class="portfolio__filter" data-filter="analysis">Data Analysis</span>
+                <span class="portfolio__filter" data-filter="ai">Artificial Intelligence</span>
+                <span class="portfolio__filter" data-filter="game">Game Development</span>
+            </div>
 
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/r.png" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Vision-Based Sensing and Navigation for an Autonomous
-                                Restaurant Robot Using YOLO</h3>
-                            <p class="portfolio__description">In this project, the robot integrates YOLOv8, an Intel
-                                RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real
-                                time, especially in crowded and dynamic environments.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link="https://www.linkedin.com/feed/update/urn:li:activity:7332154010767912960"
-                                data-link2="https://www.linkedin.com/feed/update/urn:li:activity:7332154010767912960/"
-                                data-image="assets/img/robot.png" data-modal-description="In this project, our robot integrates YOLOv8, an Intel RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real time, especially in crowded and dynamic environments. By combining both color and depth data from the environment, our system can:
-Detect tables and numbers with high accuracy, recognize digits within the robot’s field of view, analyze object positions and orientations in 3D space, perform dynamic route planning and obstacle avoidance — all without relying on preloaded maps.
-
-As a highlight, we had the opportunity to present our graduation project, “Vision-Based Sensing and Navigation for an Autonomous Restaurant Robot Using YOLO,” at the Young Brains, New Ideas (GBYF) competition held at İzmir Bakırçay University. We are proud that our project was selected as one of the top 6 finalists and earned the opportunity to be presented to the jury.
-">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/av.jpg" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Aura Vision</h3>
-                            <p class="portfolio__description">AuraVision is an interactive AI-powered web application
-                                that was developed for Lenovo's "Your Aura is Limitless" campaign.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link="https://www.youtube.com/watch?v=PWLhnZMRNPg&t=81s"
-                                data-link2="https://github.com/belizyazici/AuraVision" data-image="assets/img/av2.png"
-                                data-modal-description="AuraVision is an interactive AI-powered web application that analyzes the user's emotional state based on their input text and presents a personalized laptop advertisement visual aligned with their current mood.">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/ders.jpg" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Ders Odam</h3>
-                            <p class="portfolio__description">Ders Odam is an educational website where middle school
-                                students can watch lesson videos and receive help from a chatbot powered by Gemini AI.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link="https://www.youtube.com/watch?v=hAsXT4aibZU"
-                                data-link2="https://github.com/belizyazici/AIHackathon24"
-                                data-image="assets/img/dersodam.png"
-                                data-modal-description="Ders Odam is a comprehensive website designed to assist middle school students in their studies by providing a variety of educational resources, interactive chat with a bot, and access to educational videos tailored to their curriculum. The platform covers multiple subjects and promotes interactive learning.">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/jobai.png" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Data Analysis of Job Loss Due To AI</h3>
-                            <p class="portfolio__description">This project focuses on examining the impact of Artificial
-                                Intelligence on various industries using the "Impact of AI on Digital Media" dataset
-                                from the Kaggle platform.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button" data-link=""
-                                data-link2="https://github.com/belizyazici/Data-Analysis-of-Job-Loss-Due-to-AI"
-                                data-image="assets/img/jobai.png"
-                                data-modal-description="This project focuses on examining the impact of AI on various industries. Using the Impact of AI on Digital Media (2020-2025) Dataset obtained from the Kaggle platform, the analysis explores how AI adoption correlates with industry performance, regulatory responses, and social outcomes. The findings are compared to previous research in the field to provide context and evaluate alignment or divergence in results.">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/Untitled (11).png" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Data Analysis of Olympic History</h3>
-                            <p class="portfolio__description">The project is centered on analyzing historical data from
-                                the Olympic Games. It provides insights into trends, relationships between variables,
-                                and the distribution of athletes' characteristics such as age, height, weight, and medal
-                                achievements.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button" data-link=" "
-                                data-link2="https://github.com/belizyazici/Data_Analysis_of_Olympic_History"
-                                data-image="assets/img/Untitled (11).png"
-                                data-modal-description=" This project explores the history of the Olympic Games through data analysis using Python libraries such as Pandas and Matplotlib. It involves cleaning and visualizing a dataset from Kaggle to uncover trends like the most successful countries, gender distribution of athletes, and the evolution of sports over time. ">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+            <div class="portfolio__container container grid">
 
 
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Virus Vanguard</h3>
-                            <p class="portfolio__description">Virus Vanguard is a 3D survival game where players find
-                                themselves during an invasion, with infected patients relentlessly attempting to spread
-                                the virus to healthy individuals.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link="https://www.youtube.com/watch?v=OR8-sTPZEUU&list=LL&index=11&t=60s&pp=gAQBiAQB"
-                                data-link2="https://github.com/HasanEfeDinc/SE-330" data-image="assets/img/zombie.png"
-                                data-modal-description="Virus Vanguard is a virus-themed game where survival is the ultimate goal. In this game, players find themselves during an invasion, with infected patients relentlessly attempting to spread the virus to healthy individuals. The player’s mission is clear: either eliminate all infected threats or endure the attacks until a predetermined virus limit is reached. The player must navigate through the chaos and find their loved ones while avoiding infection.">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/love.png" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Unlocker's Tale</h3>
-                            <p class="portfolio__description">Unlocker's Tale is a 3D third-person adventure game that
-                                has three levels and in each level, the player has to find the keys of the doors to
-                                unlock and get out of there.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link="https://www.youtube.com/watch?v=QhYDi_K88aM&list=LL&index=40&pp=gAQBiAQB"
-                                data-link2="https://github.com/cansuarslangiray/UnlockersTale"
-                                data-image="assets/img/key.png"
-                                data-modal-description="Unlocker’s Tale is a 3D third-person adventure game inspired by Open the Door: A Short Story. The game consists of three levels, each with a different playing style, but the objective remains the same: find the key in each level to open the doors and progress to the next level.">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3 -->
-                    <!--<div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Whisk's Journey</h3>
-                                <p class="portfolio__description">Whisk's Journey is a game where you navigate through a chaotic environment with a cute mouse character named Whisk. You play mini-games to complete specific objectives. The goal of the game is to overcome the challenges faced by Whisk and successfully achieve the designated objectives.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button"
-                                   data-link="https://www.youtube.com/watch?v=NdA3GcsAM7s&list=LL&index=14&pp=gAQBiAQB"
-                                   data-link2="https://github.com/barisonuryy/Whisk-s-Journey"
-                                   data-image="assets/img/mouse.png"
-                                   data-modal-description="The core concept of the game revolves around the main character, Whisk the mouse, embarking on an adventure in a chaotic world to help people by accomplishing predefined objectives. These objectives manifest as various mini-games.">
-                                    More <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>-->
-                    <!-- Portfolio Item 4 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio4.jpg" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Dimensional Guardian</h3>
-                            <p class="portfolio__description">
-                                Dimensional Guardian is a 3D battleground survival game set in the dark and challenging
-                                Middle Ages.
-                                The character travels between two dimensions via a portal, battling various harmful
-                                enemies and terrifying creatures to achieve victory.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link="https://www.youtube.com/watch?v=tlhcy4fOI5I"
-                                data-link2="https://github.com/ate44/BOOTCAMPUNITY-3"
-                                data-image="assets/img/guardian.png"
-                                data-modal-description="Dimensional Guardian takes us to the dark and challenging times of the Middle Ages in a 3D battleground survival game. In this game, our character tries to survive by traveling between two dimensions through a portal. While battling various enemies during the day, the character faces a mountain troll in the cold of winter. The character, controlled by a third-person controller, fights against harmful enemies and terrifying creatures to achieve victory. ">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/mm.png" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Mind Mosaic</h3>
-                            <p class="portfolio__description">
-                                Mind Mosaic is a runner game where the player must navigate a straight path, collect
-                                items, and avoid obstacles to achieve victory. The game is designed to test your
-                                reflexes and strategy while providing an engaging and visually captivating experience.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link2="https://github.com/belizyazici/MindMosaic" data-image="assets/img/mind.png"
-                                data-modal-description="In Mind Mosaic, you step into the shoes of a character who has lost their memories and the cherished moments spent with loved ones. To reclaim these memories, the character embarks on a journey where they must collect items tied to specific individuals from their past. Each level represents a different person, and only by gathering the required number of items can the character unlock the memories associated with them. The game challenges players to navigate through paths filled with collectables and obstacles, balancing speed and precision. 
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio__content grid" data-category="ai">
+                    <img src="assets/img/r.png" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Vision-Based Sensing and Navigation for an Autonomous
+                            Restaurant Robot Using YOLO</h3>
+                        <p class="portfolio__description">In this project, the robot integrates YOLOv8, an Intel
+                            RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real
+                            time, especially in crowded and dynamic environments.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-linkedin="https://www.linkedin.com/feed/update/urn:li:activity:7332154010767912960"
+                            data-youtube="" data-github="" data-image="assets/img/robot.png" data-modal-description="In this project, our robot integrates YOLOv8, an Intel RealSense camera, and a LiDAR sensor to perceive and interpret its surroundings in real time, especially in crowded and dynamic environments. By combining both color and depth data from the environment, our system can:
+                            Detect tables and numbers with high accuracy, recognize digits within the robot’s field of view, analyze object positions and orientations in 3D space, perform dynamic route planning and obstacle avoidance — all without relying on preloaded maps.
 
-">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/wthrlogo1.png" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Weather App</h3>
-                            <p class="portfolio__description">
-                                Weather App provides weather information for all 81 cities in Turkey. Users can view
-                                today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow
-                                and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for
-                                temperature readings.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link2="https://github.com/belizyazici/WeatherApp"
-                                data-image="assets/img/weather.png" data-modal-description="Weather App provides weather information for all 81 cities in Turkey. Users can view today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for temperature readings.
-
-">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/pizza.png" alt="" class="portfolio_img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Pizza Ordering System</h3>
-                            <p class="portfolio__description">
-                                Pizza Ordering System reads the menu from a text file, takes order information from the
-                                user, and writes the order details into a CSV file.
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button"
-                                data-link2="https://github.com/belizyazici/PizzaOrderingSystem"
-                                data-image="assets/img/order.png"
-                                data-modal-description="Pizza Ordering System reads the menu from a text file, takes order information from the user, and writes the order details into a CSV file">
-                                More <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
+                            As a highlight, we had the opportunity to present our graduation project, “Vision-Based Sensing and Navigation for an Autonomous Restaurant Robot Using YOLO,” at the Young Brains, New Ideas (GBYF) competition held at İzmir Bakırçay University. We are proud that our project was selected as one of the top 6 finalists and earned the opportunity to be presented to the jury.
+                            ">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio__content grid" data-category="ai">
+                    <img src="assets/img/av.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Aura Vision</h3>
+                        <p class="portfolio__description">AuraVision is an interactive AI-powered web application
+                            that was developed for Lenovo's "Your Aura is Limitless" campaign.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-youtube="https://www.youtube.com/watch?v=PWLhnZMRNPg&t=81s"
+                            data-github="https://github.com/belizyazici/AuraVision" data-image="assets/img/av2.png"
+                            data-modal-description="AuraVision is an interactive AI-powered web application that analyzes the user's emotional state based on their input text and presents a personalized laptop advertisement visual aligned with their current mood.">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio__content grid" data-category="ai">
+                    <img src="assets/img/ders.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Ders Odam</h3>
+                        <p class="portfolio__description">Ders Odam is an educational website where middle school
+                            students can watch lesson videos and receive help from a chatbot powered by Gemini AI.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-youtube="https://www.youtube.com/watch?v=hAsXT4aibZU"
+                            data-github="https://github.com/belizyazici/AIHackathon24" data-linkedin=""
+                            data-image="assets/img/dersodam.png"
+                            data-modal-description="Ders Odam is a comprehensive website designed to assist middle school students in their studies by providing a variety of educational resources, interactive chat with a bot, and access to educational videos tailored to their curriculum. The platform covers multiple subjects and promotes interactive learning.">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio__content grid" data-category="analysis">
+                    <img src="assets/img/jobai.png" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Data Analysis of Job Loss Due To AI</h3>
+                        <p class="portfolio__description">This project focuses on examining the impact of Artificial
+                            Intelligence on various industries using the "Impact of AI on Digital Media" dataset
+                            from the Kaggle platform.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button" data-linkedin=""
+                            data-youtube=""
+                            data-github="https://github.com/belizyazici/Data-Analysis-of-Job-Loss-Due-to-AI"
+                            data-image="assets/img/jobai.png"
+                            data-modal-description="This project focuses on examining the impact of AI on various industries. Using the Impact of AI on Digital Media (2020-2025) Dataset obtained from the Kaggle platform, the analysis explores how AI adoption correlates with industry performance, regulatory responses, and social outcomes. The findings are compared to previous research in the field to provide context and evaluate alignment or divergence in results.">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio__content grid" data-category="analysis">
+                    <img src="assets/img/Untitled (11).png" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Data Analysis of Olympic History</h3>
+                        <p class="portfolio__description">The project is centered on analyzing historical data from
+                            the Olympic Games. It provides insights into trends, relationships between variables,
+                            and the distribution of athletes' characteristics such as age, height, weight, and medal
+                            achievements.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button" data-linkedin=" "
+                            data-github="https://github.com/belizyazici/Data_Analysis_of_Olympic_History"
+                            data-youtube="" data-image="assets/img/Untitled (11).png"
+                            data-modal-description=" This project explores the history of the Olympic Games through data analysis using Python libraries such as Pandas and Matplotlib. It involves cleaning and visualizing a dataset from Kaggle to uncover trends like the most successful countries, gender distribution of athletes, and the evolution of sports over time. ">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio__content grid" data-category="game ai">
+                    <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Virus Vanguard</h3>
+                        <p class="portfolio__description">Virus Vanguard is a 3D survival game where players find
+                            themselves during an invasion, with infected patients relentlessly attempting to spread
+                            the virus to healthy individuals.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-youtube="https://www.youtube.com/watch?v=OR8-sTPZEUU&list=LL&index=11&t=60s&pp=gAQBiAQB"
+                            data-github="https://github.com/HasanEfeDinc/SE-330" data-linkedin=""
+                            data-image="assets/img/zombie.png"
+                            data-modal-description="Virus Vanguard is a virus-themed game where survival is the ultimate goal. In this game, players find themselves during an invasion, with infected patients relentlessly attempting to spread the virus to healthy individuals. The player’s mission is clear: either eliminate all infected threats or endure the attacks until a predetermined virus limit is reached. The player must navigate through the chaos and find their loved ones while avoiding infection.">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio__content grid" data-category="game">
+                    <img src="assets/img/love.png" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Unlocker's Tale</h3>
+                        <p class="portfolio__description">Unlocker's Tale is a 3D third-person adventure game that
+                            has three levels and in each level, the player has to find the keys of the doors to
+                            unlock and get out of there.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-youtube="https://www.youtube.com/watch?v=QhYDi_K88aM&list=LL&index=40&pp=gAQBiAQB"
+                            data-github="https://github.com/cansuarslangiray/UnlockersTale" data-linkedin=""
+                            data-image="assets/img/key.png"
+                            data-modal-description="Unlocker’s Tale is a 3D third-person adventure game inspired by Open the Door: A Short Story. The game consists of three levels, each with a different playing style, but the objective remains the same: find the key in each level to open the doors and progress to the next level.">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio__content grid" data-category="game">
+                    <img src="assets/img/portfolio4.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Dimensional Guardian</h3>
+                        <p class="portfolio__description">
+                            Dimensional Guardian is a 3D battleground survival game set in the dark and challenging
+                            Middle Ages.
+                            The character travels between two dimensions via a portal, battling various harmful
+                            enemies and terrifying creatures to achieve victory.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-youtube="https://www.youtube.com/watch?v=tlhcy4fOI5I"
+                            data-github="https://github.com/ate44/BOOTCAMPUNITY-3" data-linkedin=""
+                            data-image="assets/img/guardian.png"
+                            data-modal-description="Dimensional Guardian takes us to the dark and challenging times of the Middle Ages in a 3D battleground survival game. In this game, our character tries to survive by traveling between two dimensions through a portal. While battling various enemies during the day, the character faces a mountain troll in the cold of winter. The character, controlled by a third-person controller, fights against harmful enemies and terrifying creatures to achieve victory. ">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio__content grid" data-category="game">
+                    <img src="assets/img/mm.png" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Mind Mosaic</h3>
+                        <p class="portfolio__description">
+                            Mind Mosaic is a runner game where the player must navigate a straight path, collect
+                            items, and avoid obstacles to achieve victory. The game is designed to test your
+                            reflexes and strategy while providing an engaging and visually captivating experience.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button" data-title="Mind Mosaic"
+                            data-github="https://github.com/belizyazici/MindMosaic" data-youtube="" data-linkedin=""
+                            data-image="assets/img/mind.png" data-modal-description="In Mind Mosaic, you step into the shoes of a character who has lost their memories and the cherished moments spent with loved ones. To reclaim these memories, the character embarks on a journey where they must collect items tied to specific individuals from their past. Each level represents a different person, and only by gathering the required number of items can the character unlock the memories associated with them. The game challenges players to navigate through paths filled with collectables and obstacles, balancing speed and precision. 
+">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio__content grid" data-category="data">
+                    <img src="assets/img/wthrlogo1.png" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Weather App</h3>
+                        <p class="portfolio__description">
+                            Weather App provides weather information for all 81 cities in Turkey. Users can view
+                            today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow
+                            and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for
+                            temperature readings.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-github="https://github.com/belizyazici/WeatherApp" data-youtube="" data-linkedin=""
+                            data-image="assets/img/weather.png" data-modal-description="Weather App provides weather information for all 81 cities in Turkey. Users can view today’s weather (both day and night) and wind speed, as well as forecasts for tomorrow and the next day. Additionally, it allows toggling between Celsius and Fahrenheit for temperature readings.
+
+">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio__content grid" data-category="data">
+                    <img src="assets/img/pizza.png" alt="" class="portfolio_img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Pizza Ordering System</h3>
+                        <p class="portfolio__description">
+                            Pizza Ordering System reads the menu from a text file, takes order information from the
+                            user, and writes the order details into a CSV file.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button"
+                            data-github="https://github.com/belizyazici/PizzaOrderingSystem" data-youtube=""
+                            data-linkedin="" data-image="assets/img/order.png"
+                            data-modal-description="Pizza Ordering System reads the menu from a text file, takes order information from the user, and writes the order details into a CSV file">
+                            More <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Modal Structure -->
+        <!--
         <div id="portfolioModal" class="modal">
             <div class="modal-content">
                 <span class="modal-close">&times;</span>
@@ -1334,7 +1317,33 @@ As a highlight, we had the opportunity to present our graduation project, “Vis
                     </a>
                 </div>
             </div>
+        </div>-->
+
+        <!-- NEW Modal Structure -->
+        <div class="custom-modal" id="customModal">
+            <div class="custom-modal__content">
+                <span class="custom-modal__close">&times;</span>
+
+                <div class="custom-modal__links">
+                    <a id="customModalYoutube" target="_blank">
+                        <i class="uil uil-youtube"></i>
+                    </a>
+
+                    <a id="customModalGithub" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+
+                    <a id="customModalLinkedin" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                </div>
+
+                <h3 id="customModalTitle"></h3>
+                <img id="customModalImage">
+                <p id="customModalDescription"></p>
+            </div>
         </div>
+
 
 
 
