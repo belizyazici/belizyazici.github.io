@@ -949,7 +949,9 @@ body.dark-theme {
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   display: none;
-  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .custom-modal.active {
@@ -959,15 +961,27 @@ body.dark-theme {
 }
 
 .custom-modal__content {
-  all: unset;
-  background: var(--container-color);
+  background: #fff;
   width: 90%;
   max-width: 800px;
-  border-radius: 16px;
+
+  max-height: 80vh;
+  /* 🔥 KRİTİK */
+  overflow-y: auto;
+  /* 🔥 KRİTİK */
+
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  font-family: inherit;
+  border-radius: 1rem;
+  position: relative;
 }
+
+#customModalImage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
 
 #customModalTitle {
   text-align: center;
