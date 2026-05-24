@@ -945,6 +945,83 @@ body.dark-theme {
   transform: scale(1.1);
 }
 
+/* Container for the rows of logos above the titles */
+.portfolio__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  align-items: center;
+
+  /* NEW: Optimizes layout boundaries so it doesn't recalulate parent heights */
+  contain: layout style;
+}
+
+
+/* The rounded badge box wrapper (Changed to flexible width) */
+.portfolio__skill-icon {
+  height: 34px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+
+  /* NEW: Forces GPU acceleration for smooth scrolling */
+  will-change: transform;
+  transform: translateZ(0);
+
+  /* Speeds up how the browser calculates shadows and borders */
+  backface-visibility: hidden;
+}
+
+/* The Devicon sizing */
+.portfolio__skill-icon i {
+  font-size: 1.15rem;
+  /* Sized perfectly for a 34px tall badge */
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__skill-icon iconify-icon {
+  font-size: 1.2rem;
+  /* Sets a perfect proportional size for a 34px container */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The new text styling */
+.portfolio__skill-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #4b5563;
+  font-family: sans-serif;
+  /* Ensures a modern look, or use your theme font */
+}
+
+/* FIX 2: Explicitly tell local SVG images how to size within the same squares */
+.portfolio__skill-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  /* Insets the vector logo elegantly */
+  box-sizing: border-box;
+}
+
+
+/* Hover transitions */
+.portfolio__skill-icon:hover {
+  transform: translateY(-2px);
+  background-color: #e5e7eb;
+}
+
 /*NEW MODAL*/
 .custom-modal {
   position: fixed;
@@ -1308,7 +1385,20 @@ i.modal-icon {
   /* Tüm containerı ortalamak için */
 }
 
+.contact__link {
+  text-decoration: none;
+  /* Removes any accidental underlines */
+  color: inherit;
+  /* Forces the text to use your theme's exact color */
+  display: flex;
+  /* Maintains your original layout alignment */
+}
 
+/* Optional: Gives a tiny interactive lift when hovered, without shifting colors */
+.contact__link:hover {
+  transform: translateY(-1px);
+  transition: transform 0.2s ease;
+}
 
 /*==================== FOOTER ====================*/
 
