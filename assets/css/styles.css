@@ -882,6 +882,28 @@ body.dark-theme {
   transition: .3s;
 }
 
+/*UPDATE ON FILTER BUTTON VISIBILITY FOR BREAKPOINT PROBLEM*/
+.portfolio__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.portfolio__filter {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+
+  white-space: nowrap;
+
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .active-filter {
   background-color: var(--first-color);
   color: #fff;
@@ -1401,7 +1423,24 @@ i.modal-icon {
 }
 
 /*==================== FOOTER ====================*/
+.footer {
+  background-color: var(--first-color-second);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
 
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
 
 /*========== SCROLL UP ==========*/
 .scrollup {
